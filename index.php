@@ -23,21 +23,12 @@
         
     </head>
     <body>
-        <?php
-        require_once 'blocks/header.php';
-        ?>
+   
       
-        <div class="systemMessageOverlay">
-            <div class="systemMessage">
-                <div class="systemMessageText" id="systemMessageText">Текст сообщения</div>
-                <div class="systemCloseButton" onclick="closeSystemMessage()">Понятно</div>
-            </div>
-        </div>
+       
        
 
-        <?php
-        require 'blocks/footer.php';
-        ?>
+
 
     </body>
 
