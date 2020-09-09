@@ -2,10 +2,10 @@
 <html>
 
     <head>
-        <title>Printing Technology - Настольная книга полиграфиста</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <title>Mommyfy</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/media/images/icons/coins.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="/media/images/icons/coins.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="/media/images/icons/coins.svg">
         <link rel="manifest" href="/images/favicon/site.webmanifest">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
@@ -15,16 +15,15 @@
         <meta name="keywords" content="Printing Tecnologies">
         <meta name="description" content="Printing Tecnologies">
 
-        <script src="//code.jquery.com/jquery-latest.js"></script> 
-        <link href="//fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-        <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" type="text/css">        
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
         <link rel="stylesheet" type="text/css" href="style/style.css">
 
         
     </head>
     <body>
    
-      
+      	
        
        
 
