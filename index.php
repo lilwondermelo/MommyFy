@@ -1,32 +1,3 @@
-<?php/*
-require_once 'articles.class.php';
-$articles = new Articles();
-// По умолчанию новости так как при пустом запросе загружается раздел новости страницы главная
-// Потом содержимое может изменяться с помощью запросов, поэтому page может изменяться в зависимости от страницы без перезагрузки
-$page = 'news';
-// Вот здесь как раз проверяется гет запрос и меняется page если он есть в гет запросе
-if (filter_input(INPUT_GET, 'page') !== null) {
-    $page = filter_input(INPUT_GET, 'page');
-}
-
-$mainpage='';
-if (filter_input(INPUT_GET, 'mainpage') !== null) {
-    $mainpage = filter_input(INPUT_GET, 'mainpage');
-}
-
-if ($page == 'news') {
-    $group = '';
-    if (filter_input(INPUT_GET, 'group') !== null) {
-        $group = filter_input(INPUT_GET, 'group');
-    }
-} else if ($page == 'interview') {
-
-    $author = '0';
-    if (filter_input(INPUT_GET, 'author') !== null) {
-        $author = intval(filter_input(INPUT_GET, 'author'));
-    }
-}*/
-?>
 <!DOCTYPE html>
 <html>
 
