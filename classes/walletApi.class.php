@@ -3,7 +3,9 @@
 class WalletApi {
 	private $path;
 	public function __construct() {
-
+		require_once $_SERVER['DOCUMENT_ROOT'] . '/_sysSet.class.php';
+		$set = new SysSet();
+		$this->path = $set->getVa
 	}
 	function getCode() {
 		$paramsYandex = array(
@@ -19,8 +21,7 @@ class WalletApi {
 }
 
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/_sysSet.class.php';
-	$sysSet = new SysSet();
+
 if (!empty($_GET['code'])) {
 	session_start ();
 	
