@@ -5,18 +5,19 @@ class WalletApi {
 	public function __construct() {
 		require_once $_SERVER['DOCUMENT_ROOT'] . '/_sysSet.class.php';
 		$set = new SysSet();
-		$this->path = $set->getVa
+		$this->path = $set->getValue('path');
+		$this->clientId = $set->getValue('client_id_yandex');
+		$this->clientSecret = $set->getValue('client_secret_yandex');
 	}
 	function getCode() {
 		$paramsYandex = array(
-			'client_id'     => $sysSet->getValue('client_id_yandex'),
-			'redirect_uri'  => $sysSet->getValue('auth_path') . 'yandexLogin.php',
+			'client_id'     => $this->clientId,
+			'redirect_uri'  => $this->path . '/yandexLogin.php',
 			'response_type' => 'code',
 			'state'         => '123'
 		);
 		$urlYandex = 'https://oauth.yandex.ru/authorize?' . urldecode(http_build_query($paramsYandex));
 		return ("Location: " . $urlYandex);
-		header 
 	}
 }
 
@@ -29,8 +30,8 @@ if (!empty($_GET['code'])) {
 	$params = array(-
 		'grant_type'    => 'authorization_code',
 		'code'          => $_GET['code'],
-		'client_id'     => $sysSet->getValue('client_id_yandex'),
-		'client_secret' => $sysSet->getValue('client_secret_yandex')
+		'client_id'     => $this->clientId,
+		'client_secret' => $this->clientSecret
 	);
 	
 	$ch = curl_init('https://oauth.yandex.ru/token');
