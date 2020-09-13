@@ -10,22 +10,30 @@
 }
 
 .authMenuItemImg, .authMenuItemImg img {
-    width: 80px;
-    height: 80px;
+    width: 20px;
+    height: 20px;
 }
 .authMenuItemText {
     display: none;
 }
 .authMenuItemImgActive, .authMenuItemImgActive img {
-    width: 150px;
-    height: 150px;
+    width: 35px;
+    height: 35px;
 }
 
 .authMenuItemTextActive {
     display: block;
 }
+.authBlock {
+    display: none;
+}
 
-
+.authBlockActive {
+    display: block;
+}
+.authPhoneCountry {
+    display: block;
+}
 .systemMessageOverlay{
     position: absolute;
     width: 100%;

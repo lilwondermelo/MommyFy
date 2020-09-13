@@ -19,24 +19,23 @@
         <div class="container">
             <div class="auth">
                 <div class="authMenu">
-                    <div class="authMenuItemImg"><img src="media/images/icons/phone.svg" alt=""></div>
+                    <div class="authMenuItemImg authMenuItemImgActive" id="authPhone"><img src="media/images/icons/phone.svg" alt=""></div>
                     <div class="authItemText">Войти по телефону</div>
-                    <div class="authMenuItemImg"><img src="media/images/icons/email.svg" alt=""></div>
+                    <div class="authMenuItemImg" id="authEmail"><img src="media/images/icons/email.svg" alt=""></div>
                     <div class="authItemText">Войти по email</div>
                 </div>
-                 <div class="authPhone">
+                 <div class="authPhone authBlock authBlockActive">
+                    <select class="authPhoneCountry" name="" id="">
+                    <option value="" id="optionTitle" disabled selected>Выберите страну</option>
+                    <option value="" id="optionRussia">Россия</option>
+                </select>
+                <input type="text" id="code">
+                <input type="text" id="phone">
+                </div>
+                <div class="authEmail authBlock">
                      
-                 </div>
-                 <div class="authEmail">
-                     
-                 </div>
+                </div>
             </div>
-        	<select name="" id="">
-        		<option value="" id="optionTitle" disabled selected>Выберите страну</option>
-        		<option value="" id="optionRussia">Россия</option>
-        	</select>
-        	<input type="text" id="code">
-        	<input type="text" id="phone">
         	<div class="loginButton">-></div>
         </div>
 
