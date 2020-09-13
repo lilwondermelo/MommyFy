@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="style/bootstrap-grid.css">
         <script src="js/jquery-3.5.1.js"></script>
-        <script src="/js/jquery.maskedinput.js"></script>
+        <script src="js/jquery.maskedinput.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
 		<script src="js/bootstrap.js"></script>
     </head>
