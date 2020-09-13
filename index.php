@@ -17,6 +17,24 @@
     </head>
     <body>
         <div class="container">
+            <div class="auth">
+                <div class="authMenu">
+                    <div class="authMenuItem">
+                        <div class="authMenuItemImg"><img src="/media/images/icons/phone.svg" alt=""></div>
+                        <div class="authItemText">Войти по телефону</div>
+                    </div>
+                    <div class="authMenuItem">
+                        <div class="authMenuItemImg"><img src="/media/images/icons/email.svg" alt=""></div>
+                        <div class="authItemText">Войти по email</div>
+                    </div>
+                </div>
+                 <div class="authPhone">
+                     
+                 </div>
+                 <div class="authEmail">
+                     
+                 </div>
+            </div>
         	<select name="" id="">
         		<option value="" id="optionTitle" disabled selected>Выберите страну</option>
         		<option value="" id="optionRussia">Россия</option>
@@ -25,6 +43,7 @@
         	<input type="text" id="phone">
         	<div class="loginButton">-></div>
         </div>
+
         <script>
         	$('#code').val('+');
         	$(document).on('input', '#code', function () {
