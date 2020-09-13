@@ -27,8 +27,8 @@
         </div>
         <script>
         	$('#code').val('+');
-        	$('#code').change(function(){
-        		if ($('#code').val() = '') {
+        	$(document).on('input', '#code', function () {
+	           if ($('#code').val() == '') {
         			$('#code').val('+');
         		}
         		else if (($('#code').val()[0] != '+') && ($('#code').val().length < 5)) {
@@ -42,8 +42,7 @@
         		}
         		else {
         		}
-        	})
-    
+			});
         </script>
     </body>
 </html>
