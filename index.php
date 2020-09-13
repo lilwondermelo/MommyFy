@@ -20,7 +20,7 @@
         <div class="container">
             <div class="auth">
                 <div class="authMenu">
-                    <div class="authMenuItemImg authMenuItemImgActive" id="authPhone"><img src="media/images/icons/phone.svg" alt="" onclick="authTypeSwitch(this);"></div>
+                    <div class="authMenuItemImg authMenuItemImgActive" id="authPhone" onclick="authTypeSwitch(this);"><img src="media/images/icons/phone.svg" alt=""></div>
                     <div class="authMenuItemText">Войти по телефону</div>
                     <div class="authMenuItemImg" id="authEmail" onclick="authTypeSwitch(this);"><img src="media/images/icons/email.svg" alt=""></div>
                     <div class="authMenuItemText">Войти по email</div>
