@@ -20,9 +20,9 @@
             <div class="auth">
                 <div class="authMenu">
                     <div class="authMenuItemImg authMenuItemImgActive" id="authPhone"><img src="media/images/icons/phone.svg" alt=""></div>
-                    <div class="authItemText">Войти по телефону</div>
+                    <div class="authMenuItemText">Войти по телефону</div>
                     <div class="authMenuItemImg" id="authEmail"><img src="media/images/icons/email.svg" alt=""></div>
-                    <div class="authItemText">Войти по email</div>
+                    <div class="authMenuItemText">Войти по email</div>
                 </div>
                  <div class="authPhone authBlock authBlockActive">
                     <select class="authPhoneCountry" name="" id="">
