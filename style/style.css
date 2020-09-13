@@ -5,6 +5,26 @@
     left:0;
 }
 
+.authMenu {
+    display: flex;
+}
+
+.authMenuItemImg, .authMenuItemImg img {
+    width: 80px;
+    height: 80px;
+}
+.authMenuItemText {
+    display: none;
+}
+.authMenuItemImgActive, .authMenuItemImgActive img {
+    width: 150px;
+    height: 150px;
+}
+
+.authMenuItemTextActive {
+    display: block;
+}
+
 
 .systemMessageOverlay{
     position: absolute;
