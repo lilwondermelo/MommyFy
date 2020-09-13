@@ -15,8 +15,8 @@
 		<script src="js/bootstrap.js"></script>
     </head>
     <body>
-        <?php
-    echo $_SERVER['DOCUMENT_ROOT'];
-    ?>	
+        <div class="container">
+            
+        </div>
     </body>
 </html>
