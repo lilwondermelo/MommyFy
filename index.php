@@ -25,7 +25,7 @@
         	<input type="text" id="phone">
         </div>
         <script>
-        	$("#code").mask("+9999", {placeholder: "+    " });
+        	$("#code").mask("+9999", {placeholder: "+" });
         </script>
     </body>
 </html>
