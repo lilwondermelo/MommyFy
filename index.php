@@ -20,8 +20,8 @@
         		<option value="" id="optionTitle" disabled selected>Выберите страну</option>
         		<option value="" id="optionRussia">Россия</option>
         	</select>
-        	<input type="text" class="code">
-        	<input type="text" class="phone">
+        	<input type="text" id="code">
+        	<input type="text" id="phone">
         </div>
         <script>
         	$("#code").mask("+9999", {placeholder: "+    " });
