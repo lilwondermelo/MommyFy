@@ -16,9 +16,15 @@
     </head>
     <body>
         <div class="container">
-        	<div class="row">
-        		<div class="col-sm-4-center">123</div>
-        	</div>
+        	<select name="" id="">
+        		<option value="" id="optionTitle" disabled selected>Выберите страну</option>
+        		<option value="" id="optionRussia">Россия</option>
+        	</select>
+        	<input type="text" class="code">
+        	<input type="text" class="phone">
         </div>
+        <script>
+        	$("#code").mask("+9999", {placeholder: "+    " });
+        </script>
     </body>
 </html>
