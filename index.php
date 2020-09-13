@@ -23,9 +23,27 @@
         	</select>
         	<input type="text" id="code">
         	<input type="text" id="phone">
+        	<div class="loginButton">-></div>
         </div>
         <script>
-        	$("#code").mask("+9999", {placeholder: "+" });
+        	$('#code').val('+');
+        	$('#code').change(function(){
+        		if ($('#code').val() = '') {
+        			$('#code').val('+');
+        		}
+        		else if (($('#code').val()[0] != '+') && ($('#code').val().length < 5)) {
+        			$('#code').val('+' + $('#code').val());
+        		}
+        		else if (($('#code').val()[0] != '+') && ($('#code').val().length > 4)) {
+        			$('#code').val('+' + $('#code').val().substring(0,4));
+        		}
+        		else if ($('#code').val().length > 5){
+        			$('#code').val($('#code').val().substring(0,5));
+        		}
+        		else {
+        		}
+        	})
+    
         </script>
     </body>
 </html>
