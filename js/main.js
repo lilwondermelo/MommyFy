@@ -15,7 +15,7 @@ function getCode() {
     });
 }
 
-function authTypeSwith(el) {
+function authTypeSwitch(el) {
     $('.authMenuItemImg').removeClass('authMenuItemImgActive');
     $(el).addClass('authMenuItemImgActive');
     $('.authBlock').removeClass('authBlockActive');
