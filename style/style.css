@@ -16,12 +16,14 @@
 .authMenuItemText {
     display: none;
 }
+
+
 .authMenuItemImgActive, .authMenuItemImgActive img {
     width: 35px;
     height: 35px;
 }
 
-.authMenuItemTextActive {
+.authMenuItemImgActive + .authMenuItemText {
     display: block;
 }
 .authBlock {
