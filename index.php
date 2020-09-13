@@ -20,11 +20,11 @@
             <div class="auth">
                 <div class="authMenu">
                     <div class="authMenuItem">
-                        <div class="authMenuItemImg"><img src="mommyfy/media/images/icons/phone.svg" alt=""></div>
+                        <div class="authMenuItemImg"><img src="media/images/icons/phone.svg" alt=""></div>
                         <div class="authItemText">Войти по телефону</div>
                     </div>
                     <div class="authMenuItem">
-                        <div class="authMenuItemImg"><img src="mommyfy/media/images/icons/email.svg" alt=""></div>
+                        <div class="authMenuItemImg"><img src="media/images/icons/email.svg" alt=""></div>
                         <div class="authItemText">Войти по email</div>
                     </div>
                 </div>
