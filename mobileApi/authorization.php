@@ -1,5 +1,5 @@
 <?php
-	require_once $_SERVER['DOCUMENT_ROOT'] . '/classes/_application.class.php';
+	require_once $_SERVER['DOCUMENT_ROOT'] . '/mommyfy/classes/_application.class.php';
 		$app = new Application();
 	if (isset($_GET['phone'])) {
 		$phone = $_GET['phone'];
