@@ -25,7 +25,7 @@
                     <div class="authMenuItemImg" id="authEmail" onclick="authTypeSwitch(this);"><img src="media/images/icons/email.svg" alt=""></div>
                     <div class="authMenuItemText">Войти по email</div>
                 </div>
-                 <div class="authPhone authBlock authBlockActive">
+                <div class="authPhone authBlock authBlockActive">
                     <select class="authPhoneCountry" name="" id="">
                     <option value="" id="optionTitle" disabled selected>Выберите страну</option>
                     <option value="" id="optionRussia">Россия</option>
