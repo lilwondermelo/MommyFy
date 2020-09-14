@@ -6,8 +6,7 @@ class Application {
                 require_once $_SERVER['DOCUMENT_ROOT'] . '/mommyfy/core/_dataRowUpdater.class.php';
                 $updater = new DataRowUpdater('dir_users');
         	$updater->setKey('phone', $phone);
-                $updater->setDataFields(array('code' => "'" . $code . "'"));
-                $result = $updater->update();
+                $updater->setDataFields(array('code' => $code));
                 if (!$result) {
                         $this->error = $updater->error;
                         return $this->error;
