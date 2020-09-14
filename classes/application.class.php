@@ -5,8 +5,8 @@ class Application {
 	function sendCode($phone) {
                 require_once $_SERVER['DOCUMENT_ROOT'] . '/mommyfy/core/_dataRowUpdater.class.php';
                 $updater = new DataRowUpdater('dir_users');
-        	$updater->setKey('phone', $phone);
-                $updater->setDataFields(array('email' => null, 'code' => $this->code));
+        	$updater->setKey('phone', "'" . $phone . "'");
+                $updater->setDataFields(array('`code`' => '1234'));
                 $result = $updater->update();
                 if (!$result) {
                         $this->error = $updater->error;
