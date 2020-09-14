@@ -10,6 +10,7 @@ class Application {
                 $result = $updater->update();
                 if (!$result) {
                         $this->error = $updater->error;
+                        return $this->error;
                 }
         	return $result;
 	}
@@ -30,7 +31,7 @@ class Application {
         	require_once $_SERVER['DOCUMENT_ROOT'] . '/mommyfy/core/_dataRowSource.class.php';
                 $dataRow = new DataRowSource('select code from dir_users where phone="' . $phone . '" and code="' . $code . '"');
                 if (!$dataRow) {
-                        return $this->error;
+                        return false;
                 }
                 return true;
 	}
