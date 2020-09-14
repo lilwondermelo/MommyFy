@@ -23,7 +23,7 @@ class Application {
                 else {
                         $this->code = $dataRow->getValue('code');
                 }
-                $sendCode = $this->sendCode();
+                $sendCode = $this->sendCode($phone);
                 return $sendCode;
         	}
         function checkCode($phone, $code) {
