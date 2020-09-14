@@ -4,7 +4,7 @@
 	if (isset($_GET['phone'])) {
 		$phone = $_GET['phone'];
 	}
-	else if (isset($_GET['email']) {
+	else if (isset($_GET['email'])) {
 		$email = $_GET['email'];
 	}
 	if (isset($_GET['code'])) {
