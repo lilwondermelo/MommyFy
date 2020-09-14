@@ -19,7 +19,7 @@ class DataConnector {
     var $server = 'lilwondermelo.space';
     //var $server = '127.0.0.1';
     var $user = 'u1142833_default';
-    var $password = 'RbWVJ4szvGQXViD';
+    var $password = 'royalflush236452';
     var $dbase = 'u1142833_default';
 
     //подключаем
