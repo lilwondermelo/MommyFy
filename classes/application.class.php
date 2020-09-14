@@ -16,7 +16,7 @@ class Application {
 	}
 	function loginCheck($phone) {
 		require_once $_SERVER['DOCUMENT_ROOT'] . '/mommyfy/core/_dataRowSource.class.php';
-                $dataRow = new DataRowSource('select phone, code from dir_users where phone=' . $phone);
+                $dataRow = new DataRowSource('select phone, code from dir_users where phone="' . $phone . '"');
                 $html = '';
                 if (!$dataRow) {
                         $this->code = random_int(1000, 9999);
