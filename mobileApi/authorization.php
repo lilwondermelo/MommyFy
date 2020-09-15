@@ -9,10 +9,10 @@
 	}
 	if (isset($_GET['code'])) {
 		$code = $_GET['code'];
-		$result = $app->checkCode($phone, $code);
+		$result = $app->checkCode($phone, $code) . '1';
 	}
 	else {
-		$result = $app->loginCheck($phone);
+		$result = $app->loginCheck($phone) . '2';
 	}
 	echo json_encode(array('result' => $result));
 ?>
