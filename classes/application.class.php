@@ -17,7 +17,7 @@ class Application {
 		require_once $_SERVER['DOCUMENT_ROOT'] . '/mommyfy/core/_dataRowSource.class.php';
                 $dataRow = new DataRowSource('select phone, code from dir_users where phone="' . $phone . '"');
                 $html = '';
-                if (!$dataRow) {
+                if (!$dataRow->getData()) {
                         $this->code = random_int(1000, 9999);
                 }
                 else {
@@ -29,7 +29,7 @@ class Application {
         function checkCode($phone, $code) {
         	require_once $_SERVER['DOCUMENT_ROOT'] . '/mommyfy/core/_dataRowSource.class.php';
                 $dataRow = new DataRowSource('select code from dir_users where phone="' . $phone . '" and code="' . $code . '"');
-                if (!$dataRow) {
+                if (!$dataRow->getData()) {
                         return false;
                 }
                 return true;
