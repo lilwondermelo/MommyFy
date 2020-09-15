@@ -3,13 +3,12 @@ class Application {
         public $error;
 	private $code;
 	function sendCode($phone) {
-                require_once $_SERVER['DOCUMENT_ROOT'] . '/mommyfy/core/_systemClass.class.php';
-                $sys = new SystemClass();
-                $userId = $sys->getUUID(); 
+              
                 require_once $_SERVER['DOCUMENT_ROOT'] . '/mommyfy/core/_dataRowUpdater.class.php';
                 $updater = new DataRowUpdater('dir_users');
-        	$updater->setKey('id', $userId);
-                $updater->setDataFields(array('phone' => $phone, 'code' => $this->code));
+        	$updater->setKey('phone', $phone);
+                $updater->setDataFields(array('code' => $this->code));
+                $result = $updater->update();
                 if (!$result) {
                         $this->error = $updater->error;
                         return $this->error;
