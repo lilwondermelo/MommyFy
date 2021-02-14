@@ -1,10 +1,10 @@
 <?php
-require_once '../tasks/classes/application.class.php';
-$app = new Application();
 if (session_status() !== PHP_SESSION_ACTIVE) {
 	session_start();
 	$_SESSION["userId"] = "a0b893a0-5036-11eb-b5a5-183f2639db3f";
 }
+require_once '../tasks/classes/application.class.php';
+$app = new Application();
 ?>
 <!DOCTYPE html>
 <html>
