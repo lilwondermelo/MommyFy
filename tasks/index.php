@@ -1,5 +1,5 @@
 <?php
-require_once '../tasks/classes/application.class.php';
+require_once 'tasks/classes/application.class.php';
 $app = new Application();
 if (session_status() !== PHP_SESSION_ACTIVE) {
 	session_start();
