@@ -42,7 +42,7 @@ class Application {
 	}
 
 	function getTasksData() {
-		if (session_status() !== PHP_SESSION_ACTIVE) {
+		if (session_status() != PHP_SESSION_ACTIVE) {
 			session_start();
 		}
 		require_once $_SERVER['DOCUMENT_ROOT'] . '/core/_dataSource.class.php';
@@ -58,6 +58,9 @@ t.name taskName, t.id taskId, t.est_date estDate, t.time_start timeStart, t.time
 	}
 
 	function getBoards() {
+		if (session_status() != PHP_SESSION_ACTIVE) {
+			session_start();
+		}
 		$boardsList = $this->getBoardsData();
 		$html = '<div class="boards row">';
 		for ($i = 0; $i < count($boardsList); $i++) {
@@ -158,5 +161,3 @@ t.name taskName, t.id taskId, t.est_date estDate, t.time_start timeStart, t.time
 	}
 }
 ?>
-
-                   			
